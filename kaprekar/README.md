@@ -65,26 +65,6 @@ This function:
 
 A `set` is used to store visited values so repeated states can be detected efficiently.
 
----
-
-## Why `zfill()` Was Used
-
-```python
-str(number).zfill(digits)
-```
-
-This preserves leading zeros during transformations.
-
-Example:
-
-```text
-0999
-```
-
-Without zero padding, the Kaprekar operation would produce incorrect results for some cases.
-
----
-
 ## Advantages
 - The same implementation works for multiple digit lengths.
 - The core logic only needs to be written once.
