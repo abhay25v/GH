@@ -86,24 +86,10 @@ Without zero padding, the Kaprekar operation would produce incorrect results for
 ---
 
 ## Advantages
-
-### Reusable
-The same implementation works for multiple digit lengths.
-
----
-
-### Less Repetition
-The core logic only needs to be written once.
-
----
-
-### Easier to Maintain
-If any logic needs to be changed, it only has to be updated in one place.
-
----
-
-### Scalable
-Additional digit lengths are automatically supported without creating new functions.
+- The same implementation works for multiple digit lengths.
+- The core logic only needs to be written once.
+- If any logic needs to be changed, it only has to be updated in one place.
+- Additional digit lengths are automatically supported without creating new functions.
 
 ---
 
@@ -122,30 +108,16 @@ Implementing separate functions up to 10 digits would mostly increase repetitive
 
 ## Advantages
 
-### Easy to Understand
-Each function handles one specific case, so the flow is simple and explicit.
-
----
-
-### Beginner Friendly
-The logic is easier to trace during debugging.
+- Each function handles one specific case, so the flow is simple and explicit.
+- The logic is easier to trace during debugging.
 
 ---
 
 ## Disadvantages
 
-### Code Duplication
-A lot of logic gets repeated across functions.
-
----
-
-### Poor Scalability
-Supporting more digit lengths requires writing more functions.
-
----
-
-### Harder Maintenance
-Changes have to be made in multiple places.
+- A lot of logic gets repeated across functions.
+- Supporting more digit lengths requires writing more functions.
+- Changes have to be made in multiple places.
 
 ---
 
